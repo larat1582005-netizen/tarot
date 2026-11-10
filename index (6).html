@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Golden Tarot</title><link rel="stylesheet" href="style.css"></head><body>
+<button id="mute" title="Mute">🔊</button>
+<header><div class="orn">☼ ✦ ☾ ✦ ☼</div><h1>THE GOLDEN TAROT</h1><p class="sub">The cards know what you seek.</p><div class="orn">✧ ❦ ✧ ❦ ✧</div>
+<nav><button class="on" data-v="draw">Draw</button><button data-v="daily">Daily Card</button><button data-v="spread">Readings</button><button data-v="gallery">Gallery</button></nav></header>
+<main>
+<section id="draw" class="view on">
+<div id="deck"><div class="dk bk"></div><div class="dk bk"></div><div class="dk bk"></div><div class="dk bk"></div></div>
+<p id="cnt"></p>
+<div class="btns"><button id="shuf">Shuffle the Deck</button><button id="drw">Draw a Card</button></div>
+<div id="stage" class="cards big"></div><div id="info" class="info"></div></section>
+<section id="daily" class="view"><h2>Card of the Day</h2><p>One card is revealed to you each day.</p>
+<div class="btns"><button id="dbtn">Reveal Today's Card</button></div><div id="dst" class="cards big"></div><div id="dinfo" class="info"></div></section>
+<section id="spread" class="view"><h2>Choose Your Reading</h2>
+<div class="btns"><button data-s="three">Past · Present · Future</button><button data-s="love">Love</button><button data-s="career">Career</button><button data-s="yn">Yes or No</button></div>
+<div id="sst" class="cards"></div><div id="sinfo" class="info"></div></section>
+<section id="gallery" class="view"><h2>The Complete Deck of 78</h2><p>Touch any card for its full meaning.</p><div id="grid"></div></section>
+</main>
+<div id="modal"><div class="mw"><button id="x">Close ✕</button><div id="mc" class="cards big"></div><div id="mi" class="info"></div></div></div>
+<script src="script.js"></script></body></html>
